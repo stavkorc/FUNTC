@@ -11,6 +11,26 @@
         <link rel="icon" type="image/png" sizes="16x16" href="im/favicon-16x16.png">
         <link rel="manifest" href="im/site.webmanifest">
 
+          <style>
+            .content {
+              max-height: 0;
+              overflow: hidden;
+              transition: max-height 0.5s ease;
+              background: #f0f0f0;
+              padding: 0 10px;
+            }
+        
+            .content.show {
+              max-height: 200px;
+              padding: 10px;
+            }
+        
+            button {
+              padding: 10px 20px;
+              font-size: 16px;
+            }
+          </style>
+
     </head>
 
     <body>
@@ -21,6 +41,20 @@
                 <li><a href="">refresh</a></li>
             </ul>
         </nav>
+
+
+        
+         <button onclick="toggleContent()">Показать текст</button>
+          <div id="content" class="content">
+            <p>Это скрытый текст, который выдвигается при нажатии на кнопку.</p>
+          </div>
+        
+          <script>
+            function toggleContent() {
+              const content = document.getElementById('content');
+              content.classList.toggle('show');
+            }
+          </script>
 
         
 
