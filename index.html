@@ -46,20 +46,7 @@
         
         <button onclick="toggleContent()">Показать текст</button>
         <div id="content" class="content">
-            <p>Это скрытый текст, который выдвигается при нажатии на кнопку.</p>
-        </div>
-        
-        <script>
-        function toggleContent() {
-            const content = document.getElementById('content');
-            content.classList.toggle('show');
-        }
-        </script>
-
-        
-
-        <h1 id="z">FunTime Commands</h1><br>
-        <h2 id="f">
+            <p id="f">
             /piona /aqua /fonix /focus1 /honey /melix /hardy - for one of these promo codes, you will be given a free case.<br><br>
 
             /vk - you can link your account to the VKontakte page.<br><br>
@@ -92,7 +79,20 @@
 
             /rtp - teleport to any point in the world<br><br>
             
-            /event delay - how much time is left until the event.</h2>
+            /event delay - how much time is left until the event.</p>
+        </div>
+        
+        <script>
+        function toggleContent() {
+            const content = document.getElementById('content');
+            content.classList.toggle('show');
+        }
+        </script>
+
+        
+
+        <h1 id="z">FunTime Commands</h1><br>
+
 
 
     </body>
